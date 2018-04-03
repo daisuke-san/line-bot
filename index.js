@@ -29,7 +29,7 @@ server.post('/webhook', line.middleware(line_config), (req, res, next) => {
             if (event.message.text == "こんにちは") {
                 events_processed.push(bot.replyMessage(event.replyToken, {
                     type: "text",
-                    text: "こんにちは(笑)"
+                    text: "こんにちは。"
                 }));
             }
         }
